@@ -166,7 +166,7 @@ async function handleAdd(){
   try {
     const result = await analyzeAI(url, apiKey);
     items.unshift({
-      id:Date.now(), url,
+      id:Date.now(), url: url.startsWith('http') ? url : 'https://' + url,
       category:result.category||"其他",
       subCategory:result.subCategory||"",
       name:result.name||"未知商品",
