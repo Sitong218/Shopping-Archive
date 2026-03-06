@@ -57,7 +57,7 @@ body{min-height:100vh;background:#f5f0eb;font-family:'PingFang SC',sans-serif;co
 
 <div class="api-bar">
   <span>🔑 API Key</span>
-  <input id="apiKey" type="password" placeholder="粘贴你的 sk-ant-... Key"/>
+  <input id="apiKey" type="password" placeholder="粘贴你的 sk-ant-... Key" oninput="localStorage.setItem('apiKey',this.value)"/>
 </div>
 
 <div class="header">
