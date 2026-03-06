@@ -262,6 +262,8 @@ function renderWaterfall(){
 }
 
 function setTab(t){ activeTab=t; renderAll(); }
+const savedKey = localStorage.getItem('apiKey');
+if(savedKey) document.getElementById('apiKey').value = savedKey;
 renderAll();
 </script>
 </body>
