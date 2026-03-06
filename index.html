@@ -241,7 +241,7 @@ function renderWaterfall(){
         :`<div class="card-placeholder" style="background:${c.color}22">${c.icon}</div>`;
       const colorTag=hex
         ?`<span class="tag-color" style="background:${hex}">${item.colorName}</span>`:"";
-      return `<div class="card">
+      return `<a href="${item.url}" target="_blank" style="text-decoration:none;color:inherit;display:block"><div class="card">
         ${imgHtml}
         <div class="card-body">
           <p class="card-name">${item.name}</p>
